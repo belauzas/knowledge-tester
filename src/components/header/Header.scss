@@ -1,0 +1,33 @@
+#main_header {
+    padding: 10px 0;
+    box-shadow: 0 2px 8px #333E;
+
+    header {
+    
+        > .logo {
+            display: inline-block;
+            float: left;
+            line-height: 40px;
+            font-size: 24px;
+        }
+    
+        > nav {
+            display: inline-block;
+            float: right;
+    
+            > div {
+                display: inline-block;
+                float: left;
+                padding: 10px 20px;
+                line-height: 20px;
+                font-size: 18px;
+                cursor: pointer;
+
+                &:hover,
+                &.active {
+                    border-bottom: 2px solid #CCC;
+                }
+            }
+        }
+    }
+}
