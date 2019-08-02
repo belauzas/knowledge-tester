@@ -11,4 +11,14 @@
         font-size: 90px;
         line-height: 110px;
     }
+
+    .not-yet {
+        display: inline-block;
+        width: 100%;
+        margin-top: 40px;
+        line-height: 20px;
+        font-size: 22px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }

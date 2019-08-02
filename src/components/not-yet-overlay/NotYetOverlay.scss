@@ -1,0 +1,33 @@
+.not-yet-overlay {
+    display: inline-block;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFE;
+
+    .number {
+        display: inline-block;
+        width: 160px;
+        height: 160px;
+        margin: calc(50vh - 80px) calc(50vw - 80px);
+        text-align: center;
+        font-size: 150px;
+        line-height: 160px;
+        color: #333333FF;
+        animation: numberPop 1s infinite;
+    }
+
+    @keyframes numberPop {
+        0% {
+            font-size: 160px;
+            color: #333333FF;
+        }
+        100% {
+            font-size: 320px;
+            color: #FFFFFF00;
+        }
+    }
+}
