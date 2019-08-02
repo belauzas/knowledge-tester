@@ -1,6 +1,14 @@
 #main_header {
     padding: 10px 0;
-    box-shadow: 0 2px 8px #333E;
+    // box-shadow: 0 2px 8px #333E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    + * {
+        padding-top: 160px;
+    }
 
     header {
     
@@ -9,6 +17,8 @@
             float: left;
             line-height: 40px;
             font-size: 24px;
+            color: #FFF;
+            cursor: default;
         }
     
         > nav {
@@ -22,10 +32,12 @@
                 line-height: 20px;
                 font-size: 18px;
                 cursor: pointer;
+                color: #FFF;
 
                 &:hover,
                 &.active {
                     border-bottom: 2px solid #CCC;
+                    padding-bottom: 8px;
                 }
             }
         }
